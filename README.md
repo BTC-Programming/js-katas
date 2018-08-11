@@ -1,5 +1,6 @@
 # js-katas 
 1.0 Ice Cream Katas
+
 These are introductory exercises to learn basic Javascript Control Flow Constructs (Loops and Conditionals) and objects 
 (String Variables and Arrays). 
 
