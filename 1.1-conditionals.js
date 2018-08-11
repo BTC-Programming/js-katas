@@ -1,17 +1,16 @@
-/* 1.1 - Conditionals with Prompt */
-
-// Conditional where flavor = chocolate or vanilla
-// Prompt for flavor, then output "here's your" + flavor
-// If strawberry, alert "all out of strawberry"
-// Else alert "no such flavor"
+// Prompt for a flavor "What flavor scoop?", then show an alert with "Here's your [flavor] scoop. Enjoy!"
+// Use conditional logic to check responses where flavor is not equal to chocolate or vanilla:
+// 	  If strawberry, alert "Sorry, we're all out of strawberry."
+// 	  Else alert "Sorry, we don't carry [flavor]."
+// For fun, add other conditionals and responses. 
 
 flavor = prompt("What flavor scoop?");
 if (flavor == "chocolate " || flavor == "vanilla"){
-	alert("Here's your"+flavor);
+	alert("Here's your "+flavor+" scoop. Enjoy!");
 }
 else if (flavor == "strawbery") {
-	alert("All out of "+flavor);
+	alert("Sorry, we're all out of "+flavor+".");
 }
 else {
-	alert("No such flavor ");
+	alert("Sorry, we don't carry "+flavor+".");
 }
