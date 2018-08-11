@@ -34,7 +34,7 @@ Instructions
 		Else alert "Sorry, we don't carry [flavor]."
 		Allow selecting another flavor if not in stock -- don't deprive user of scoops!
 
-1.4 - Two Arrays and a Function
+1.4 - Arrays and a Function
 
 Instructions
 
