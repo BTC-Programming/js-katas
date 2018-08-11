@@ -2,7 +2,7 @@
 1.0 Ice Cream Katas
 
 These are introductory exercises to learn basic Javascript Control Flow Constructs (Loops and Conditionals) and objects 
-(String Variables and Arrays).  Here is one resource to learn these: http://www.dmc.fmph.uniba.sk/public_html/doc/Java/ch5.htm
+(String Variables and Arrays).  
 
 	1.1 Conditionals
 	1.2 While Loop
