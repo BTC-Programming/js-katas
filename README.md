@@ -32,8 +32,23 @@ Instructions
 		If scoop is in stock, show an alert with "Here's your [flavor] scoop"
 		If strawberry, alert "Sorry, we're all out of strawberry."
 		Else alert "Sorry, we don't carry [flavor]."
-	Allow selecting another flavor if not in stock -- don't deprive user of scoops!
-	You may use a while loop if you wish.
+		Allow selecting another flavor if not in stock -- don't deprive user of scoops!
+
+1.4 - Arrays and a Function
+
+Instructions
+
+We are building a sundae with scoops, so you need an array for the scoops, called flavors 
+We are checking flavor requests against flavors in stock, so you need an array called ourFlavors
+This is for a three-scoops sundae, so you'll use a loop. 
+Prompt for each flavor by scoop number
+Use a function called inArray to check if the requested flavor is in stock
+If scoop is in stock, show an alert with "Here's your [flavor] scoop"
+Use conditional logic for addtional options. 
+	If strawberry, alert "Sorry, we're all out of strawberry."
+	Else alert "Sorry, we don't carry [flavor]."
+	Allow selecting another flavor -- don't deprive user of scoops!
+
 
 
 NOTE: Unlike most GitHub projects, each branch is a SEPARATE SET OF KATAS.  Do not initiate merge requests. 
