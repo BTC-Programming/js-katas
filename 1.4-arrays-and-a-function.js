@@ -40,8 +40,4 @@ function inArray(svalue, tarray){
 		}
 	}
 	return answer;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 263edb21d5eb1dd40c07e7a84b208d8e04246ce0
