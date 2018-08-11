@@ -23,4 +23,3 @@ Instructions
 	Hint: don't use an "else" without a condition in the loop!
 
 NOTE: Unlike most GitHub projects, each branch is a SEPARATE SET OF KATAS.  Do not initiate merge requests. 
-
