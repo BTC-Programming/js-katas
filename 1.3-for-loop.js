@@ -1,34 +1,24 @@
-// flavors are chocolate, vanilla, strawberry
-// we are out of strawberry
-// create a for loop for three flavors
-// allow selecting another flavor if strawberry or not a flavor
-// alert "Here's your" + flavor when a good flavor is picked
+// This is for a three-scoops sundae, so you'll use a loop. 
+// Prompt for a flavor by scoop number
+// Use conditional logic to check responses where flavor is not equal to chocolate or vanilla
+//    If scoop is in stock, show an alert with "Here's your [flavor] scoop"
+// 	  If strawberry, alert "Sorry, we're all out of strawberry."
+// 	  Else alert "Sorry, we don't carry [flavor]."
+// allow selecting another flavor -- don't deprive user of scoops!
+// You may use a while loop if you wish.
 
-for (scoop=1;scoop<4;scoop++) {
-	flavor = prompt("What flavor scoop?");
-	if (flavor=="chocolate" || flavor=="vanilla"){
-		alert("Here's your "+flavor+" scoop");
+
+scoops = 3;
+for (scoop=1;scoop<scoops+1;scoop++) {
+	flavor = prompt("What flavor for scoop "+scoop+"?");
+	if (flavor == "chocolate " || flavor == "vanilla"){
+		alert("Here's your "+flavor+" scoop.");
 	}
-	else if (flavor == "strawberry") {
-		alert("All out of "+flavor);
-		scoop=scoop-1;
-		}
+	else if (flavor == "strawbery") {
+		alert("Sorry, we're all out of "+flavor+".");
+	}
 	else {
-		alert(flavor+" is not a flavor.");
-		scoop=scoop-1;
-		}
-}
-
-
-
-
-
-function inArray(svalue, tarray){
-	answer=false;
-	for (index=0;index<tarray.length;index++){
-		if (svalue==tarray[index]){
-			answer=true;
-		}
+		alert("Sorry, we don't carry "+flavor+".");
 	}
-	return answer;
 }
+alert ("Enjoy!");

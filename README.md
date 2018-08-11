@@ -22,4 +22,18 @@ Instructions
 	If flavor equal to "done", alert "Enjoy!"
 	Hint: don't use an "else" without a condition in the loop!
 
+1.3 - For Loop
+
+Instructions
+
+	This is for a three-scoops sundae, so you'll use a loop. 
+	Prompt for a flavor by scoop number
+	Use conditional logic to check responses where flavor is not equal to chocolate or vanilla
+		If scoop is in stock, show an alert with "Here's your [flavor] scoop"
+		If strawberry, alert "Sorry, we're all out of strawberry."
+		Else alert "Sorry, we don't carry [flavor]."
+	Allow selecting another flavor if not in stock -- don't deprive user of scoops!
+	You may use a while loop if you wish.
+
+
 NOTE: Unlike most GitHub projects, each branch is a SEPARATE SET OF KATAS.  Do not initiate merge requests. 
