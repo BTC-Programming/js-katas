@@ -1,53 +1,43 @@
-// create array with all regular flavors
-var ourFlavors = ["chocolate","vanilla","strawberry","coffee","pistachio"];
-// count the number of flavors in our list
-var flavorlist=ourFlavors.length;
-// create an array to hold the choices
-var sundaeFlavors = [];
-// number our scoops
+// This is the same program as before, except we are changing the output
+// Instead of printing out the arrays directly, add commas between the values
+// This is done with the array.join function. 
+// Also, comment each line so you can use this code as a study guide. 
+// To study, make a version WITHOUT the comments, and then comment it
+
+
+
+var ourFlavors=["chocolate","vanilla","strawberry"];
+var sundaeFlavors=[];
 var scoops = 3;
-// list our flavors 
-alert("Here are our flavors: "+ourFlavors);
-// initialize a boolean variable called inArray
-inArray=false;
-// use a for loop to request flavors
-for(scoop=1;scoop<scoops;scoop++) {
-	// use a while loop to check the flavors
-	while(inArray==false) {
-		flavor = prompt("Enter an ice cream flavor");
-		// check if the requested flavor is in our list
-		// use a loop to compare values
-		for(index=0;index<flavorlist;index=index+1) {
-			// if the flavor is in ourFlavors
-			if (flavor==ourFlavors[index]){
-				// if we are out of strawberry, give us another request 
-				if (flavor=="strawberry"){
-					alert("Sorry, we are all out of "+flavor+".");
-					scoop=scoop-1;
-					inArray=true;
-				}
-				// otherwise put the flavor in the sundaeFlavors array
-				sundaeFlavors[scoop-1]=flavor;
-				// and say it was added
-				alert(flavor+" added.");
-				// and change our boolean to exit the while loop
-				inArray=true;
-			}
-		// otherwise check the next flavor in ourFlavors
+ourString = ourFlavors.join(', ');
+alert("Here are our flavors: "+ourString+".");
+for (scoop=0;scoop<scoops;scoop++) {
+	flavor = prompt("What flavor scoop?");
+	if (inArray(flavor, ourFlavors)==true){
+		if (flavor == "strawberry") {
+			alert("Sorry, we're all out of "+flavor+".");
+			scoop=scoop-1;
 		}
-		// if we didn't exit the while loop, we don't carry the flavor
-		alert("Sorry, we don't carry "+flavor+".");
-		// so remind what the flavors are 
-		alert("Here are our flavors again: "+ourFlavors);
-		// and don't deny a scoop
-		scoop=scoop-1;
-		// go to the next scoop and re-set the boolean
-		inArray=true;
+		else {
+			sundaeFlavors[scoop]=flavor;
+		}
 	}
-	// go to the next scoop and re-set the boolean
-	inArray=false;
-	// all scoops are chosen
+	else {
+		alert("Sorry, we don't carry "+flavor+".");
+		alert("Here are our flavors: "+ourString+".");
+		scoop=scoop-1;
+		}
 } 
-// display our sundae
-coneString = sundaeFlavors.join(' ');
-alert("Enjoy your "+coneString.toString() + " sundae.");
+sundaeString = sundaeFlavors.join(', ');
+alert("Enjoy your "+sundaeString.toString() + " sundae.");
+
+
+function inArray(svalue, tarray){
+	answer=false;
+	for (index=0;index<tarray.length;index++){
+		if (svalue==tarray[index]){
+			answer=true;
+		}
+	}
+	return answer;
+}

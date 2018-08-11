@@ -1,6 +1,7 @@
 /* 1.2 - While Loop */
 
 // Conditional where flavor = chocolate or vanilla
+// Have as many scoops as you want!
 // Begin with flavor = "start"
 // Accept flavors unless flavor = "done"
 // Prompt for flavor, then output "here's your" + flavor
@@ -12,7 +13,7 @@ flavor = "start";
 while (flavor != "done") {
 	flavor = prompt("What flavor scoop?");
 	if (flavor == "chocolate" || flavor == "vanilla"){
-	alert("Here's your "+flavor+" scoop.");
+		alert("Here's your "+flavor+" scoop.");
 	}
 	else if (flavor == "strawbery") {
 		alert("Sorry, we're all out of "+flavor+".");

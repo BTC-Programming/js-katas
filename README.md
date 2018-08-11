@@ -14,6 +14,7 @@ Instructions
 Instructions
 
 	Conditional where flavor = chocolate or vanilla
+	Have as many scoops as you want!
 	Begin with flavor = "start"
 	Use a While Loop to accept flavors unless flavor = "done"
 	Prompt for flavor, then output "here's your" + flavor
@@ -48,5 +49,15 @@ Instructions
 		If strawberry, alert "Sorry, we're all out of strawberry."
 		Else alert "Sorry, we don't carry [flavor]."
 		Allow selecting another flavor -- don't deprive user of scoops!
+
+1.5 Challenge
+
+Instructions
+
+	This is the same program as before, except we are changing the output
+	Instead of printing out the arrays directly, add commas between the values
+	This is done with the array.join function. 
+	Also, comment each line so you can use this code as a study guide. 
+	To study, make a version WITHOUT the comments, and then comment it
 
 NOTE: Unlike most GitHub projects, each branch is a SEPARATE SET OF KATAS.  Do not initiate merge requests. 
