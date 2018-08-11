@@ -1,13 +1,13 @@
 # js-katas 
-1.0 Ice Cream Katas
+1.1 - Conditionals with Prompt
 
-These are introductory exercises to learn basic Javascript Control Flow Constructs (Loops and Conditionals) and objects 
-(String Variables and Arrays).  
+Instructions
 
-	1.1 Conditionals
-	1.2 While Loop
-	1.3 For Loop
-	1.4 Array
-	1.5 Array Output
+	Prompt for a flavor "What flavor scoop?", then show an alert with "Here's your [flavor] scoop"
+	Use conditional logic to check responses where flavor is not equal to chocolate or vanilla:
+		If strawberry, alert "Sorry, we're all out of strawberry"
+		Else alert "Sorry, we don't carry [flavor]"
+	For fun, add other conditionals and responses. 
 
 NOTE: Unlike most GitHub projects, each branch is a SEPARATE SET OF KATAS.  Do not initiate merge requests. 
+
