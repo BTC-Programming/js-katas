@@ -1,10 +1,10 @@
 alert("Play Rock Paper Scissors with me! Choose q for quit.");
 playAgain="y";
-do {
+while (playAgain == "y"){
 choice=prompt("Enter rock, paper or scissors.");
 rps(choice);
 }
-while (playAgain == "y");
+alert("Thank you for playing!");
 
 function rps (choice){
 switch(choice) {
@@ -18,9 +18,10 @@ switch(choice) {
         alert("rock. I win!")
         break;
 	case "q":
-		playAgain="n";
+	playAgain="n";
+	break;
 	default:
-		("No. Enter rock, paper or scissors.")
+		alert("No. Enter rock, paper or scissors.");
 	}
 }
 
