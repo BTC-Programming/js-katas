@@ -8,7 +8,8 @@ var goodHand=false;
 var userHand="";
 
 // run program
-do {
+// keep playing until user enters stop.
+while (winner!="stop") { 
 	cpuNum=Math.round(Math.random()*2); // computer picks 0-2
 	userNum=getUserHand(hands);// user picks 0-2
 	winner=evaluateHand(hands,cpuNum,userNum); // compare hands, like 01,20
@@ -19,7 +20,6 @@ do {
 		alert("You picked "+hands[userNum]+". I picked "+hands[cpuNum]+" so "+winner+" won!");
 		}
 }
-while (winner!="stop"); // until user enters stop.
 alert("Thank you for playing!");
 
 // get user input function
