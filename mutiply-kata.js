@@ -4,10 +4,20 @@
  *
  */
 
-// 1. Print 2 Random Integers, X & Y, each between 3 and 9, as a soluble equation:  X * Y = ??
-// 2. Receive manual input for solution, say "Correct!" if match, "Incorrect!" if not.
-// 3. Embed equation in While loop that continues until entry matches solution, or = "stop".
+// 0. Initialize Variables
+x = 0;
+y = 0; 
+userInput = 0;
+solution = x*y;
 
+// 1. Print 2 Random Integers, X & Y, each between 3 and 9, as a soluble equation:  X * Y = ??
+x = 
+y =
+alert (x+" * " ...)	
+// 2. Receive manual input for userInput, say "Correct!" if match, "Incorrect!" if not.
+userInput=
+// 3. Embed equation in While loop that continues until entry matches solution, or = "stop".
+while (userInput
 
 /* Multiplication Merit: JS Katas
  *
