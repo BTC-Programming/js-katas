@@ -9,11 +9,11 @@ var x = 0, y = 0;
 var userInput = 0;
 var solution = x*y;
 
-// 1. Print 2 Random Integers, X & Y, each between 3 and 9, as a soluble equation:  X * Y = ??
+// 1. Print 2 Random Integers, X & Y, each between 3 and 9, as an equation:  X * Y = ??
 x = 
 y =
 alert (x+" * " ...)	
-// 2. Receive manual input for userInput, say "Correct!" if match, "Incorrect!" if not.
+// 2. Receive manual input for userInput, say "Correct!" if matches equation solution, "Incorrect!" if not.
 userInput=
 // 3. Embed equation in While loop that continues until entry matches solution, or = "stop".
 while (userInput
