@@ -5,10 +5,9 @@
  */
 
 // 0. Initialize Variables
-x = 0;
-y = 0; 
-userInput = 0;
-solution = x*y;
+var x = 0, y = 0; 
+var userInput = 0;
+var solution = x*y;
 
 // 1. Print 2 Random Integers, X & Y, each between 3 and 9, as a soluble equation:  X * Y = ??
 x = 
