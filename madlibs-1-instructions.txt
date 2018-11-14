@@ -1,4 +1,4 @@
-Madlibs Kata: 1 Replaced Word */
+Madlibs Kata: 1 Replaced Word 
 
 1. obtain a sentence string (sentenceString)
 2. split string at spaces into an array of words (sentence)
