@@ -12,7 +12,7 @@ sentence=sentenceString.split(" ");
 // Input the replacement word index
 index = prompt("Replace which word? First is 0.");
 partOfSpeech = prompt("Part of speech of this word?");
-sentence[index]=partOfSpeech;
+sentence[index]="_"+partOfSpeech+"__;
 // output string and array, alert both
 newSentence = sentence.join(" ");
 alert(newSentence);
