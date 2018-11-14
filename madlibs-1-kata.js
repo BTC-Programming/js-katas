@@ -1,4 +1,14 @@
-/* String to Array: Split and Join */
+/* Madlibs Kata: 1 Replaced Word */
+*
+* 1. obtain a sentence string (sentenceString)
+* 2. split string at spaces into an array of words (sentence)
+* 3. for testing, write sentence array to console log
+* 4. obtain index of word in sentence array to replace (hint first is 0)
+* 5. obtain part of speech of word to replace (partOfSpeech)
+* 6. set word at this index equal to underscore + partOfSpeech + underscore
+* 7. join array of words into new sentence
+* 8. display new sentence
+*/
 
 // initialize variables
 var sentenceString=null; // initial sentence string
