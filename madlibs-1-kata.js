@@ -15,4 +15,4 @@ partOfSpeech = prompt("Part of speech of this word?");
 sentence[index]=partOfSpeech;
 // output string and array, alert both
 newSentence = sentence.join(" ");
-alert("Here is your madlib:"+newSentence);
+alert(newSentence);
