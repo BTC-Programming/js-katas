@@ -11,7 +11,7 @@ sentenceString = prompt("Enter a sentence.");
 sentence=sentenceString.split(" ");
 // Input the replacement word index
 index = prompt("Replace which word? First is 0.");
-partOfSpeech prompt("Part of speech of this word?");
+partOfSpeech = prompt("Part of speech of this word?");
 sentence[index]=partOfSpeech;
 // output string and array, alert both
 newSentence = sentence.join(" ");
