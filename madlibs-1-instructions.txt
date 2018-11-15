@@ -14,7 +14,7 @@ Madlibs Kata 2: Author and Player.
 9. display message: "Author, get player.  You leave now."
 10. obtain a word that matches the part of speech required (replacement)
 11. replace the element in sentence that had the part of speech with the replacement word
-12. display message: "Player, get author,  When both here, see Madlib."
-13. join sentence array of words into new sentence (newSentence)
+12. join sentence array of words into new sentence (newSentence)
+13. display message: "Player, get author,  When both here, see Madlib."
 14. display new sentence. 
 
