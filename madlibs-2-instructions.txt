@@ -1,0 +1,25 @@
+Madlibs Kata: 3: Replace more than one
+
+1. obtain a sentence string (sentenceString)
+2. split string at spaces into an array of words (sentence)
+3. for testing, write sentence array to console log
+4. obtain number of words to replace (toReplace)
+5. create a loop to go through each word.
+6. obtain index of next word in sentence array to replace - first is 0 (index)
+7. store this index in new replacements array (replacements)
+8. obtain part of speech of this to replace (partOfSpeech)
+9. set word at this index equal to underscore + partOfSpeech + underscore
+10. end loop
+11. join array of words into new sentence(newSentence)
+12. display new sentence as madlib.
+
+Madlibs Kata 4: Author and Player. 
+
+13. display message: "Author, get player.  You leave now."
+14. loop number of words to replace (toReplace)
+15. for word at replacements index, obtain a word that matches the part of speech required
+16. replace the element in sentence that had the part of speech with the replacement word
+17. end loop
+18. join sentence array of words into new sentence (newSentence)
+19. display message: "Player, get author,  When both here, see Madlib."
+20. display new sentence. 
