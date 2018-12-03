@@ -1,6 +1,6 @@
 // Madlibs Kata: 3: Replace more than one word
 
-// 1. Define variables (sententeString, sentence[], toReplace, replaceIndex, replacement, replacements[], newSentence)
+// 1. Define variables (sentenceString, sentence[], toReplace, replaceIndex, replacement, replacements[], newSentence)
 
 // 2. obtain a sentence string (sentenceString)
 
