@@ -1,26 +1,45 @@
-Madlibs Kata: 3: Replace more than one
-0. Define variables (sententeString, sentence[], toReplace, replaceIndex, replacement, replacements[], newSentence)
-1. obtain a sentence string (sentenceString)
-2. split string at spaces into an array of words (sentence)
-3. for testing, write sentence array to console log
-4. obtain number of words to replace (toReplace)
-5. create a loop to go through each word up to number of words to replace (toReplace)
-6. obtain index of next word in sentence array to replace - first is 0 (replaceIndex)
-7. store this index in new replacements array (replacements)
-8. obtain part of speech of this to replace (partOfSpeech)
-9. set word at this index equal to underscore + partOfSpeech + underscore
-10. end loop
-11. join array of words into new sentence(newSentence)
-12. display new sentence as madlib.
+// Madlibs Kata: 3: Replace more than one word
 
-Madlibs Kata 4: Author and Player. 
+// 1. Define variables (sententeString, sentence[], toReplace, replaceIndex, replacement, replacements[], newSentence)
 
-13. display message: "Author, get player.  You leave now."
-14. loop i over number of words to replace (toReplace)
-15. set partOfSpeech equal to word in sentence array corresponding to value of replacements array element at i
-15. obtain a word that matches the part of speech required for the sentence word whose index is replacements index (replacement)
-16. replace the element in sentence that had the part of speech with the obtained eplacement word
-17. end loop
-18. join sentence array of words into new sentence (newSentence)
-19. display message: "Player, get author,  When both here, see Madlib."
-20. display new sentence. 
+// 2. obtain a sentence string (sentenceString)
+
+// 3. split string at spaces into an array of words (sentence)
+
+// 4. obtain number of words to replace (toReplace)
+
+// 5. create a loop to go through each word up to number of words to replace (toReplace)
+
+// 6. obtain index of next word in sentence array to replace - first is 0 (replaceIndex)
+
+// 7. store this index in new replacements array (replacements)
+
+// 8. obtain part of speech of this to replace (partOfSpeech)
+
+// 9. set sentence word at this index equal to partOfSpeech with underscores before & after
+
+// 10. end loop
+
+// 11. join array of words into new sentence(newSentence)
+
+// 12. console log new sentence as madlib.
+
+// Madlibs Kata 4: Author and Player. 
+
+// 13. display message: "Author, get player.  You leave now."
+
+// 14. create a loop to go through each word up to number of words to replace (toReplace)
+
+// 15. set partOfSpeech equal to word in sentence array corresponding to value of sentence word at replacements[i]
+
+// 15. obtain a word that matches the part of speech at sentence word whose index is at replacements[i]
+
+// 16. replace the element at replacements[i] with that replacement word
+
+// 17. end loop
+
+// 18. join sentence array of words into new sentence (newSentence)
+
+// 19. display message: "Player, get author,  When both here, see Madlib."
+
+// 20. display new sentence. 
