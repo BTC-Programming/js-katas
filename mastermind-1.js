@@ -38,13 +38,10 @@ function testGuess(guess,code,feedback) {
 	var tempcode=code;
 	// count the blacks and erase guess and tempcode as you go
 	for (g=0;g<4;g++) {	
-		for (c=0;c<4;c++) {
-			if (guess[g]!="" && guess[g]==tempcode[g]){
-				feedback[g]="b";
-				guess[g]="";	
-				tempcode[g]="";	
-				continue;
-			}
+		if (guess[g]!="" && guess[g]==tempcode[g]){
+			feedback[g]="b";
+			guess[g]="";	
+			tempcode[g]="";	
 		}
 	}
 	// count the whites and erase guess and tempcode as you go
