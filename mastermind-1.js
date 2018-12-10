@@ -34,8 +34,9 @@ function getGuess(guess) {
 
 /* Analyze the Guess */
 function testGuess(guess,code,feedback) {
-	alert("Here is my report:");
+	// create a temporary code
 	var tempcode=code;
+	// count the blacks and erase guess and tempcode as you go
 	for (g=0;g<4;g++) {	
 		for (c=0;c<4;c++) {
 			if (guess[g]!="" && guess[g]==tempcode[g]){
@@ -44,7 +45,12 @@ function testGuess(guess,code,feedback) {
 				tempcode[g]="";	
 				continue;
 			}
-			else if (guess[g]!="" && guess[g]==tempcode[c]) {
+		}
+	}
+	// count the whites and erase guess and tempcode as you go
+	for (g=0;g<4;g++) {	
+		for (c=0;c<4;c++) {
+			if (guess[g]!="" && guess[g]==tempcode[c]) {
 				feedback[g]="w";
 				guess[g]="";	
 				tempcode[c]="";
@@ -52,30 +58,36 @@ function testGuess(guess,code,feedback) {
 			}
 		}
 	}
+	// send the feeback to the formatter
 	feedback=formatFeedback(feedback);
+	// console log the feedback
 	console.log("Feedback: "+feedback);
 }
 
 function formatFeedback(feedback) {
+	// initialize the black and white counts
 	var b=0, w=0;
+	// count the blacks and whites
 	for (i=0;i<4;i++) {
 		if (feedback[i]=="b") {
 			b++;
-			feedback[i]=="";
 		}
 		else if (feedback[i]=="w") {
 			w++;
-			feedback[i]=="";
 		}
 	}
+	// write the black pegs
 	for (i=0;i<b;i++) {
 		feedback[i]="b";
 	}
+	// write the white pegs
 	for (i=b;i<b+w;i++) {
 		feedback[i]="w";
 	}
+	// delete the blanks after
 	for (i=0;i<4-(b+w);i++) {
 		feedback.pop();
 	}
+	// return the new array
 	return feedback;
 }
