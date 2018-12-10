@@ -1,0 +1,24 @@
+/** mastermind - 1 turn @bmoreini*/
+
+/* Initialization */
+var colors = ['r', 'c', 'w', 'g', 'b', 'y'];
+var code=[];
+var guess=[];
+var feedback=[];
+
+/* Main Method */
+code=setCode(code,colors);
+guess=getGuess(guess);
+testGuess(guess,code,feedback);
+
+/* Create the Secret Code */
+
+/* Get a Player's Guess */
+
+/* Analyze the Guess */
+// How many black pegs?
+// How many white pegs?
+
+/* Rearrange the Feedback */ 
+// Black Pegs
+// White Pegs
