@@ -7,12 +7,12 @@ var guess=[];
 var feedback=[];
 
 /* Main Method */
-code=setCode(code,colors);
-guess=getGuess(guess);
-testGuess(guess,code,feedback);
+//code=setCode(code,colors);
+//guess=getGuess(guess);
+//testGuess(guess,code,feedback);
 
 /* Create the Secret Code */
-// randomly assign colors to 4 values
+// randomly assign from 6 colors to 4 values
 // console log the code
 
 /* Get a Player's Guess */
@@ -20,18 +20,20 @@ testGuess(guess,code,feedback);
 // console log the guess
 
 /* Analyze the Guess */
-// create a temp code
-// two double loops!
-// count a black peg
+// create a temp code array
+// Nested Loops
+// count a black peg for matches
 // replace a black peg with a blank
-// same for white pegs
+// continue when match found
+// Nested Loops
+// same for white pegs as black
 // console log the feedback
 
 /* Rearrange the Feedback */ 
 // Count black pegs in feedback
 // Count white pegs in feedback
-// Rewrite blacks first
-// Rewrite whites second
+// Rewrite # blacks first
+// Rewrite # whites second
 // Delete the rest
 // Console.log the feedback
 // Return feedback
