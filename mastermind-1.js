@@ -54,18 +54,29 @@ function testGuess(guess,code,feedback) {
 			}
 		}
 	}
-	console.log(feedback);
+	console.log("Before Sort: "+feedback);
 	feedback=formatFeedback(feedback);
-	console.log(feedback);
+	console.log("After Sort: "+feedback);
 }
 
 function formatFeedback(feedback) {
-	feedback=feedback.filter(Boolean);
-	for (i=0;i<feedback.length;i++) {
-		newP=Math.round(Math.random()*feedback.length)-1;
-		swap=feedback[i];
-		feedback[i]=feedback[newP];
-		feedback[newP]=swap;
+	var b=0, w=0;
+	ffeedback=[];
+	for (i=0;i<4;i++) {
+		if (feedback[i]=="b") {
+			b++;
+			feedback[i]=="";
 		}
-	return feedback;
+		else if (feedback[i]=="w") {
+			w++;
+			feedback[i]=="";
+		}
+	}
+	for (i=0;i<b;i++) {
+		ffeedback[i]="b";
+	}
+	for (i=b;i<b+w;i++) {
+		ffeedback[i]="w";
+	}
+	return ffeedback;
 }
