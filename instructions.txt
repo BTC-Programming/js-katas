@@ -12,13 +12,26 @@ guess=getGuess(guess);
 testGuess(guess,code,feedback);
 
 /* Create the Secret Code */
+// randomly assign colors to 4 values
+// console log the code
 
 /* Get a Player's Guess */
+// accept four colors
+// console log the guess
 
 /* Analyze the Guess */
-// How many black pegs?
-// How many white pegs?
+// create a temp code
+// two double loops!
+// count a black peg
+// replace a black peg with a blank
+// same for white pegs
+// console log the feedback
 
 /* Rearrange the Feedback */ 
-// Black Pegs
-// White Pegs
+// Count black pegs in feedback
+// Count white pegs in feedback
+// Rewrite blacks first
+// Rewrite whites second
+// Delete the rest
+// Console.log the feedback
+// Return feedback
