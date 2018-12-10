@@ -42,26 +42,22 @@ function testGuess(guess,code,feedback) {
 				feedback[g]="b";
 				guess[g]="";	
 				tempcode[g]="";	
-				console.trace(g,c);
 				continue;
 			}
 			else if (guess[g]!="" && guess[g]==tempcode[c]) {
 				feedback[g]="w";
 				guess[g]="";	
 				tempcode[c]="";
-				console.trace(g,c);
 				continue;
 			}
 		}
 	}
-	console.log("Before Sort: "+feedback);
 	feedback=formatFeedback(feedback);
-	console.log("After Sort: "+feedback);
+	console.log("Feedback: "+feedback);
 }
 
 function formatFeedback(feedback) {
 	var b=0, w=0;
-	ffeedback=[];
 	for (i=0;i<4;i++) {
 		if (feedback[i]=="b") {
 			b++;
@@ -73,10 +69,13 @@ function formatFeedback(feedback) {
 		}
 	}
 	for (i=0;i<b;i++) {
-		ffeedback[i]="b";
+		feedback[i]="b";
 	}
 	for (i=b;i<b+w;i++) {
-		ffeedback[i]="w";
+		feedback[i]="w";
 	}
-	return ffeedback;
+	for (i=0;i<4-(b+w);i++) {
+		feedback.pop();
+	}
+	return feedback;
 }
